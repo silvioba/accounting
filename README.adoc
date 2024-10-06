@@ -1,0 +1,28 @@
+# accounting
+A terminal and postgre based accounting software
+
+## Directory structure
+    accounting/
+    ├── 01_src/                     # Source code for the project
+    │   ├── package_name/           # Main package directory (contains Python modules)
+    │   │   ├── __init__.py         # Marks the directory as a package
+    │   │   ├── module1.py          # A module (Python file with code)
+    │   │   └── module2.py          # Another module
+    │   ├── main.py                 # Entry point of the application (if applicable)
+    │   └── __init__.py             # Initializes the src directory as a package 
+    ├── 02_tests/                   # Unit or integration tests
+    │   ├── test_module1.py         # Tests for module1
+    │   ├── test_module2.py         # Tests for module2
+    │   └── __init__.py             # Marks the directory as a package (optional)
+    ├── 03_docs/                    # Documentation for the project
+    ├── .gitignore                  # Git ignore file (files and directories to ignore)
+    ├── README.adoc                 # Project README (overview, how to install/use)
+    ├── requirements.txt            # Dependencies (if using pip)
+
+## Set up
+### .env file
+Create in 01_src a ".env" file
+
+### Databse
+1. You need to have a new and empty postgre database running at localhost
+2. Create variables DBNAME, DBUSER, DBPW in the .env file
